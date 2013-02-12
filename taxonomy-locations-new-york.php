@@ -42,7 +42,7 @@ taxonomy-shoes.php
 						    </section> <!-- end article section -->
 						
 						    <footer class="article-footer">
-									<p>End of footer</p>
+								<p>This is the end of the article</p>
 						    </footer> <!-- end article footer -->
 					
 					    </article> <!-- end article -->

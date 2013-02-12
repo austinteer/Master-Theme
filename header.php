@@ -41,23 +41,32 @@
 
 	<body <?php body_class(); ?>>
 
-		<div id="container">
+		<div class="wrapper one-whole">
 
-			<header class="header" role="banner">
+			<header class="page-head black-gradient">
+			
+				<div class="large-wrap gw one-whole">
+				
+					<!-- Uncomment for responsive sites 				
+					<button class="menu-button">
+						<span class="button-bar"></span>
+						<span class="button-bar"></span>
+						<span class="button-bar"></span>
+					</button> -->
 
-				<div id="inner-header" class="wrap clearfix">
+					<div class="site-logo">
+						<!-- Uncomment for responsive sites -->
+						<!-- <a class="hide--desk" href="<?php // echo home_url(); ?>" rel="nofollow"><?php // bloginfo('name'); ?></a> -->
 
-					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
-					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a></p>
-
-					<!-- if you'd like to use the site description you can un-comment it below -->
-					<?php // bloginfo('description'); ?>
-
-
-					<nav role="navigation">
+						<a href="<?php echo home_url(); ?>" rel="nofollow">
+							<img  src="<?php bloginfo('template_directory');?>/library/images/logo.png" alt="<?php bloginfo('name'); ?>"/>
+						</a>
+					</div> <!-- //logo -->
+					
+					<nav class="main-nav" role="navigation">
 						<?php bones_main_nav(); ?>
 					</nav>
-
-				</div> <!-- end #inner-header -->
-
-			</header> <!-- end header -->
+				
+				</div> <!-- // large-wrap-->
+			
+			</header> <!-- // header -->
