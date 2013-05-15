@@ -1,0 +1,36 @@
+/*
+ *  Sliding Door Button Sprite. 
+ *  <a class="sprite-btn" href="http://example.com"><span>Example</span></a>
+ */
+
+
+.sprite-btn {
+  background: transparent url('../images/btn-right.png') no-repeat top right; /* This needs to be the skinner image */
+  display: block;
+  float: left;
+  height: 50px; /* Height of button */
+  margin-right: 20px;
+  padding-right: 19px; /* width of right image */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  @include font-size(16px);
+
+	span {
+  	background: transparent url('../images/btn-left.png') no-repeat 0 0; /* This needs to be the wider image */
+  	display: block;
+  	line-height: 38px;
+  	padding: 7px 20px 5px 39px;
+ 	 	color: #fff;
+
+ 	 	&:hover{
+			background-position: 0 -50px; /* Height of button */
+ 	 	}
+	}
+
+	&:hover{
+		background-position: right -50px; /* Height of button */
+    text-decoration: none;
+	}
+
+}

@@ -21,9 +21,11 @@
 		<!-- icons & favicons (for more: http://www.jonathantneal.com/blog/understand-the-favicon/) -->
 		<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/library/images/apple-icon-touch.png">
 		<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
+		
 		<!--[if IE]>
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
+
 		<!-- or, set /favicon.ico for IE10 win -->
 		<meta name="msapplication-TileColor" content="#f01d4f">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
@@ -40,19 +42,18 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-
-		<div class="wrapper one-whole">
+		<!-- set your max-width in custom-var.scss -->
+		<div class="one-whole">
 
 			<header class="page-head black-gradient">
 			
 				<div class="large-wrap gw one-whole">
 				
-					<!-- Uncomment for responsive sites 				
 					<button class="menu-button">
 						<span class="button-bar"></span>
 						<span class="button-bar"></span>
 						<span class="button-bar"></span>
-					</button> -->
+					</button>
 
 					<div class="site-logo">
 						<!-- Uncomment for responsive sites -->

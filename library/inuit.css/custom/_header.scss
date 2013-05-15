@@ -1,0 +1,83 @@
+
+/* Main Desktop Nav */
+.main-nav{
+	display: none;
+
+	li{
+		display: block;
+	}
+
+	a{
+		color: $white;
+		background: $mobile-nav-bg;
+		width: 100%;
+		padding: 5px 0 5px 25px;
+
+		&:hover, a:focus{
+			background: darken($mobile-nav-bg, 20%);
+		}
+	}
+	
+	@include media-query(desk){
+		float: right;
+
+		ul{
+			margin-bottom: 0;
+		}
+
+		li{
+			display: inline-block;
+			*zoom: 1;
+			*display: inline;
+			padding: 0 10px;
+		} /* end li */
+	
+		a{
+			background: none;
+			width: inherit;
+			padding: 0;
+			color: $site-nav-color;
+			@include font-size(16px); 
+			
+			&:hover{
+				background: none;
+				color: $site-nav-hover;
+	
+				/* Set Text Decoration in custom-vars.scss */
+				@if $text-decoration == false{
+					text-decoration: none;
+				} /* end if */
+			} /* end a:hover */
+		} /* end a */
+		
+	} /* end Media Query Desk */
+
+} /* end .main-nav */
+
+/* Responsive button menu */
+.menu-button{
+	display: block;
+	background: #383838;
+	border: none;
+	padding: 10px 10px;
+	
+	/* Uncomment for rounded bordered buton */
+	/*
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	*/
+
+}
+
+.button-bar{
+	display: block;
+	background: $white;
+	margin: 3px 0;
+	width: 20px;
+	height: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+}

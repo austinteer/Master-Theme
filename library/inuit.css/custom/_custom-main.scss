@@ -4,16 +4,10 @@ html{
 	}
 }
 
-/* Just to wrap all content together */
-.wrapper{
-
-}
-
-
 /* Width of Photoshop file */
 .large-wrap{ 
 	margin: 0 auto;
-	max-width: 1170px;
+	max-width: $max-width;
 }
 
 /* Max Width of content */
@@ -22,4 +16,5 @@ html{
 	padding: 0 10px;
 	margin: 0 auto;
 }
+
 

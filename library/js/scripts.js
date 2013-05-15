@@ -106,3 +106,19 @@ jQuery(document).ready(function($) {
 	w.addEventListener( "orientationchange", restoreZoom, false );
 	w.addEventListener( "devicemotion", checkTilt, false );
 })( this );
+
+
+(function($) {
+    $('document').ready(function(){
+        $('.menu-button').click(function(){
+            $('.main-nav').toggle("slow");
+        });
+    });
+}(jQuery));
+
+
+
+
+
+
+
