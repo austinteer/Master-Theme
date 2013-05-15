@@ -1,10 +1,44 @@
 
 /* Main Desktop Nav */
 .main-nav{
-	display: none;
+	display: inline;
+	
+	ul{
+		margin-bottom: 0;
+	}
+
+	li{
+		display: inline-block;
+		*zoom: 1;
+		*display: inline;
+		padding: 0 10px;
+	} /* end li */
+	
+	a{
+		background: none;
+		width: inherit;
+		padding: 0;
+		color: $site-nav-color;
+		@include font-size(16px); 
+			
+		&:hover{
+			background: none;
+			color: $site-nav-hover;
+	
+			/* Set Text Decoration in custom-vars.scss */
+			@if $text-decoration == false{
+				text-decoration: none;
+			} /* end if */
+		} /* end a:hover */
+	} /* end a */
+
+	@include media-query(palm){
+		display: none;
+
 
 	li{
 		display: block;
+		padding: 0;
 	}
 
 	a{
@@ -16,41 +50,8 @@
 		&:hover, a:focus{
 			background: darken($mobile-nav-bg, 20%);
 		}
-	}
-	
-	@include media-query(desk){
-		float: right;
-
-		ul{
-			margin-bottom: 0;
-		}
-
-		li{
-			display: inline-block;
-			*zoom: 1;
-			*display: inline;
-			padding: 0 10px;
-		} /* end li */
-	
-		a{
-			background: none;
-			width: inherit;
-			padding: 0;
-			color: $site-nav-color;
-			@include font-size(16px); 
-			
-			&:hover{
-				background: none;
-				color: $site-nav-hover;
-	
-				/* Set Text Decoration in custom-vars.scss */
-				@if $text-decoration == false{
-					text-decoration: none;
-				} /* end if */
-			} /* end a:hover */
-		} /* end a */
-		
-	} /* end Media Query Desk */
+	}	
+	} /* end Media Query Plam */
 
 } /* end .main-nav */
 
@@ -67,6 +68,14 @@
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	*/
+
+	@include media-query(desk){
+		display: none;
+	}
+
+	@include media-query(lap){
+		display: none;
+	}
 
 }
 

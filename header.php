@@ -49,7 +49,7 @@
 			
 				<div class="large-wrap gw one-whole">
 				
-					<button class="menu-button">
+					<button class="menu-button" role="navigation">
 						<span class="button-bar"></span>
 						<span class="button-bar"></span>
 						<span class="button-bar"></span>

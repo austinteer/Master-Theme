@@ -4164,56 +4164,57 @@ really slow down your CSS. Don't overdue it.
 /* Main Desktop Nav */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\000033}}
 .main-nav {
-  display: none;
-  /* end Media Query Desk */ }
+  display: inline;
+  /* end li */
+  /* end a */
+  /* end Media Query Plam */ }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\000036}}
-  .main-nav li {
-    display: block; }
+  .main-nav ul {
+    margin-bottom: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000310}}
+  .main-nav li {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    padding: 0 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000317}}
   .main-nav a {
-    color: white;
-    background: #d8d8d8;
-    width: 100%;
-    padding: 5px 0 5px 25px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000316}}
-    .main-nav a:hover, .main-nav a a:focus {
-      background: #a5a5a5; }
-  @media only screen and (min-width: 1024px) {
+    background: none;
+    width: inherit;
+    padding: 0;
+    color: #383838;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
+    /* end a:hover */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000324}}
+    .main-nav a:hover {
+      background: none;
+      color: #858585;
+      /* Set Text Decoration in custom-vars.scss */
+      text-decoration: none;
+      /* end if */ }
+  @media only screen and (max-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\000033}}
     .main-nav {
-      float: right;
-      /* end li */
-      /* end a */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000324}}
-      .main-nav ul {
-        margin-bottom: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000328}}
+      display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000339}}
       .main-nav li {
-        display: inline-block;
-        *zoom: 1;
-        *display: inline;
-        padding: 0 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000335}}
+        display: block;
+        padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000344}}
       .main-nav a {
-        background: none;
-        width: inherit;
-        padding: 0;
-        color: #383838;
-        font-size: 16px;
-        font-size: 1rem;
-        line-height: 1.5;
-        /* end a:hover */ }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000342}}
-        .main-nav a:hover {
-          background: none;
-          color: #858585;
-          /* Set Text Decoration in custom-vars.scss */
-          text-decoration: none;
-          /* end if */ } }
+        color: white;
+        background: #d8d8d8;
+        width: 100%;
+        padding: 5px 0 5px 25px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000350}}
+        .main-nav a:hover, .main-nav a a:focus {
+          background: #a5a5a5; } }
 
 /* end .main-nav */
 /* Responsive button menu */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000359}}
 .menu-button {
   display: block;
   background: #383838;
@@ -4225,8 +4226,16 @@ really slow down your CSS. Don't overdue it.
   -moz-border-radius: 5px;
   border-radius: 5px;
   */ }
+  @media only screen and (min-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000359}}
+    .menu-button {
+      display: none; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000359}}
+    .menu-button {
+      display: none; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bigfresh\/Development\/Theme\%20Development\/wp-content\/themes\/mastertheme\/library\/inuit\.css\/custom\/_header\.scss}line{font-family:\0000382}}
 .button-bar {
   display: block;
   background: white;
